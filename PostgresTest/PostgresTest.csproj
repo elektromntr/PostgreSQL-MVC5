@@ -148,6 +148,10 @@
     <Compile Include="Migrations\201904091942361_carsExtended.Designer.cs">
       <DependentUpon>201904091942361_carsExtended.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904101142185_jsonTagsProperty.cs" />
+    <Compile Include="Migrations\201904101142185_jsonTagsProperty.Designer.cs">
+      <DependentUpon>201904101142185_jsonTagsProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Context.cs" />
@@ -217,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904091942361_carsExtended.resx">
       <DependentUpon>201904091942361_carsExtended.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101142185_jsonTagsProperty.resx">
+      <DependentUpon>201904101142185_jsonTagsProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

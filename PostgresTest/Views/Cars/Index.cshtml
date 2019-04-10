@@ -17,6 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Year)
         </th>
+        <th>
+            Tags
+        </th>
         <th></th>
     </tr>
 
@@ -27,6 +30,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @(item.Tags == null ? String.Empty : String.Join(", ", item.Tags))
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.LicenseNumber }) |

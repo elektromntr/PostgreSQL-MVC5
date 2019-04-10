@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using PostgresTest.Models;
 
@@ -46,7 +42,7 @@ namespace PostgresTest.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "LicenseNumber,Insurance,Year")] Car car)
+        public ActionResult Create([Bind(Include = "LicenseNumber,Insurance,Year,Tags")] Car car)
         {
             if (ModelState.IsValid)
             {

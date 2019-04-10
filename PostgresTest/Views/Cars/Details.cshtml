@@ -25,6 +25,12 @@
         <dd>
             @Html.DisplayFor(model => model.Year)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+        <dd>
+            @(Model.Tags == null ? String.Empty : String.Join(", ", Model.Tags))
+        </dd>
 
     </dl>
 </div>

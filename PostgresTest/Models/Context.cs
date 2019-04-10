@@ -10,6 +10,7 @@ namespace PostgresTest.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema("public");
+            modelBuilder.Entity<Car>().Property(b => b._Tags).HasColumnName("Tag");
             base.OnModelCreating(modelBuilder);
         }
 
